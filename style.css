@@ -1,0 +1,472 @@
+/*
+ Theme Name:     Divi Spirit Bomb Child
+ Theme URI:      https://www.elegantthemes.com/gallery/divi/
+ Description:    Divi Child Theme
+ Author:         Spirit Bomb
+ Author URI:     https://spiritbomb.ai/
+ Template:       Divi
+ Version:        1.0.0
+*/
+
+/* =Theme customization starts here
+------------------------------------------------------- */
+a {color: #00ffff;}
+a:hover{text-decoration: underline;}
+a.contact:hover {text-decoration: underline;}
+a.footer-1 {color: #8b8b8b !important;}
+a.footer-1:hover {color: red !important;}
+.post-meta a:hover {text-decoration: underline;}
+.entry-title a:hover {text-decoration: underline;}
+.et_pb_blog_grid .et_pb_post {background-color: #000;}
+div#footer-bottom {display: none;}
+.overlayEffect:before {display: block; position: absolute; content: ''; background: rgba(0, 0, 0, 0.5); top: 0; bottom: 0; left: 0; right: 0;}
+
+/* Close Lightbox on click */
+.mfp-content {
+    pointer-events: none!important;
+}
+
+/* fix firefox email subscribe button spacing */
+.gecko .et_pb_newsletter .et_pb_newsletter_field {margin-bottom: auto;}
+
+/* make post content background color not-white */
+.single #main-content {
+background-color: transparent;
+}
+
+.menuExpand a {
+	color: #fff;
+}
+
+.menuExpand a:hover {
+	text-decoration: underline;
+}
+
+.sidebarMenu a {
+	color: #fff;
+}
+
+.sidebarMenu a:hover {
+	text-decoration: underline;
+}
+
+#sls_des {
+    opacity: 0.0;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+#sls_nav:hover + #sls_des {
+    opacity: 1.0 !important;
+}
+
+.sb_des {
+    opacity: 0.0;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+#sb_nav:hover ~ .sb_des {
+    opacity: 1.0 !important;
+}
+
+#hv_des {
+    opacity: 0.0;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+#hv_nav:hover + #hv_des {
+    opacity: 1.0 !important;
+}
+
+#xen-hover {
+    opacity: 0.0;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+#xen-select:hover + #xen-hover {
+    opacity: 1.0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+	#xen-select {
+		margin-left:0;
+		padding-bottom: 25px;
+		width: 20%;
+		z-index: 5;
+	}
+}
+
+#antifragile-hover {
+    opacity: 0.0;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+#antifragile-select:hover + #antifragile-hover {
+    opacity: 1.0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+	#antifragile-select {
+		margin-left:0;
+		padding-bottom: 25px;
+		width: 20%;
+		z-index:5;
+	}
+}
+
+#izi-hover {
+    opacity: 0.0;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+#izi-select:hover + #izi-hover {
+    opacity: 1.0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+	#izi-select {
+		margin-left:0;
+		padding-bottom: 25px;
+		width: 20%;
+		z-index: 5;
+	}
+}
+
+#subi-hover {
+    opacity: 0.0;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+#subi-select:hover + #subi-hover {
+    opacity: 1.0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+	#subi-select {
+		margin-right:0;
+		padding-bottom: 25px;
+		width: 20%;
+		z-index: 5;
+	}
+}
+
+#yd-hover {
+    opacity: 0.0;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+#yd-select:hover + #yd-hover {
+    opacity: 1.0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+	#yd-select {
+		margin-right:0;
+		padding-bottom: 25px;
+		width: 20%;
+		z-index: 5;
+	}
+}
+
+#lv426-hover {
+    opacity: 0.0;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+#lv426-select:hover + #lv426-hover {
+    opacity: 1.0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+	#lv426-select {
+		margin-right:0;
+		padding-bottom: 25px;
+		width: 20%;
+		z-index: 5;
+	}
+}
+
+.glitch-img {
+ 	/* position: absolute;
+	top: 0;
+	left: 0; */
+ 	opacity : 1
+}
+
+.glitch {
+	position: relative;
+	mix-blend-mode: lighten;
+}
+
+.glitch:before {
+	left: -3px;
+	text-shadow: 1px 0 rgba(255, 0, 0);
+}
+
+.glitch:after {
+	left: 3px;
+	text-shadow: -1px 0 rgba(0, 0, 255);
+}
+
+.glitch:before, .glitch:after {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	width: 100%;
+	clip: rect(0, 0, 0, 0);
+}
+
+.glitch:hover:before {
+	text-shadow: 4px 0 rgba(255, 0, 0);
+	animation: glitchone 0.8s infinite ease-in-out alternate-reverse;
+}
+
+.glitch:hover:after {
+	text-shadow: -5px 0 rgba(0, 0, 255);
+	animation: glitchtwo 0.8s infinite ease-in-out alternate-reverse;
+}
+
+@keyframes glitchone {
+	0% {
+		clip: rect(1px, 9999px, 9px, 0);
+	}
+	25% {
+		clip: rect(4px, 9999px, 99px, 0);
+	}
+	50% {
+		clip: rect(2px, 9999px, 102px, 0);
+	}
+	75% {
+		clip: rect(11px, 9999px, 92px, 0);
+	}
+	100% {
+		clip: rect(28px, 9999px, 98px, 0);
+	}
+}
+
+@keyframes glitchtwo {
+	0% {
+		top: -3px;
+		left: 3px;
+		clip: rect(5px, 9999px, 119px, 0);
+	}
+	25% {
+		top: -7px;
+		left: 5px;
+		clip: rect(9px, 9999px, 19px, 0);
+	}
+	50% {
+		top: 15px;
+		left: 3px;
+		clip: rect(68px, 9999px, 11px, 0);
+	}
+	75% {
+		top: 15px;
+		left: -5px;
+		clip: rect(95px, 9999px, 53px, 0);
+	}
+	100% {
+		top: -3px;
+		left: 3px;
+		clip: rect(31px, 9999px, 149px, 0);
+	}
+}
+
+/* offset newConsciousness bg video */
+@media (min-width: 981px) {
+	#newcons-section .et_pb_section_video_bg .mejs-video {
+    left: 77.3% !important;
+    position: absolute;
+    max-width: none;
+	}
+}
+
+/* elm terminal effect elements remain hidden until script executes */
+
+#aav-txt {
+	visibility: hidden;
+}
+
+#aav-txt-2 {
+	visibility: hidden;
+}
+
+#newcons-header {
+	visibility: hidden;
+}
+
+#newcons-txt {
+	visibility: hidden;
+}
+
+/* #logos-header {
+	visibility: hidden;
+} */
+
+#logos-txt {
+	visibility: hidden;
+}
+
+#humanmachine-header {
+	visibility: hidden;
+}
+
+#humanmachine-txt {
+	visibility: hidden;
+}
+
+#hotf-header {
+	visibility: hidden;
+}
+
+#tna-mobile-txt {
+	visibility: hidden;
+}
+
+#tna-txt {
+	visibility: hidden;
+}
+
+#procedural-txt {
+	visibility: hidden;
+}
+
+#procedural-header {
+	visibility: hidden;
+}
+
+#toi-header {
+	visibility: hidden;
+}
+
+#toi-txt {
+	visibility: hidden;
+}
+
+#impossibleinstruments-header {
+	visibility: hidden;
+}
+
+#seemingly-header {
+	visibility: hidden;
+}
+
+#live-exp-header {
+	visibility: hidden;
+}
+
+#live-exp-txt {
+	visibility: hidden;
+}
+
+/*
+
+original glitch keyframe settings
+
+@keyframes glitchone {
+	0% {
+		clip: rect(36px, 9999px, 9px, 0);
+	}
+	25% {
+		clip: rect(25px, 9999px, 99px, 0);
+	}
+	50% {
+		clip: rect(50px, 9999px, 102px, 0);
+	}
+	75% {
+		clip: rect(30px, 9999px, 92px, 0);
+	}
+	100% {
+		clip: rect(91px, 9999px, 98px, 0);
+	}
+}
+
+@keyframes glitchtwo {
+	0% {
+		top: -3px;
+		left: 3px;
+		clip: rect(65px, 9999px, 119px, 0);
+	}
+	25% {
+		top: -7px;
+		left: 5px;
+		clip: rect(79px, 9999px, 19px, 0);
+	}
+	50% {
+		top: 15px;
+		left: 3px;
+		clip: rect(68px, 9999px, 11px, 0);
+	}
+	75% {
+		top: 15px;
+		left: -5px;
+		clip: rect(95px, 9999px, 53px, 0);
+	}
+	100% {
+		top: -3px;
+		left: 3px;
+		clip: rect(31px, 9999px, 149px, 0);
+	}
+}
+
+exegesis landing logo placement
+
+@media (min-width: 981px) and (max-width: 1015px) {
+	.et_pb_image_0 {top: 120px !important; left: -1px !important;}
+}
+
+@media (min-width: 1016px) and (max-width: 1035px) {
+	.et_pb_image_0 {top: 130px !important;}
+}
+
+@media (min-width: 1036px) and (max-width: 1079px) {
+	.et_pb_image_0 {top: 140px !important; left: -1px !important;}
+}
+
+
+@media (min-width: 1080px) and (max-width: 1130px) {
+	.et_pb_image_0 {top: 145px !important;}
+}
+
+@media (min-width: 1131px) and (max-width: 1201px) {
+	.et_pb_image_0 {top: 160px !important;}
+}
+
+@media (min-width: 1202px) and (max-width: 1301px) {
+	.et_pb_image_0 {top: 180px !important;}
+} */ 

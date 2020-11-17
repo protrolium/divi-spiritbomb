@@ -89,6 +89,22 @@ background-color: transparent;
     opacity: 1.0 !important;
 }
 
+#sb-spirits {
+  padding-left: 0.7vw;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+  #sb-spirits {
+    padding-left: 1.7vw;
+  }
+}
+
+@media only screen and (min-width: 1770px) {
+  #sb-spirits {
+    padding-left: 1.6vw;
+  }
+}
+
 #xen-hover {
     opacity: 0.0;
     -webkit-transition: all 500ms ease-in-out;
@@ -313,6 +329,7 @@ background-color: transparent;
     left: 77.3% !important;
     position: absolute;
     max-width: none;
+    height: 100vh;
 	}
 }
 

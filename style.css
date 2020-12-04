@@ -5,21 +5,55 @@
  Author:         Spirit Bomb, Inc.
  Author URI:     https://spiritbomb.ai/
  Template:       Divi
- Version:        1.0.2
+ Version:        1.1.0
 */
 
 /* =Theme customization starts here
 ------------------------------------------------------- */
-a {color: #00ffff;}
-a:hover{text-decoration: underline;}
-a.contact:hover {text-decoration: underline;}
-a.footer-1 {color: #8b8b8b !important;}
-a.footer-1:hover {color: red !important;}
-.post-meta a:hover {text-decoration: underline;}
-.entry-title a:hover {text-decoration: underline;}
-.et_pb_blog_grid .et_pb_post {background-color: #000;}
-div#footer-bottom {display: none;}
-.overlayEffect:before {display: block; position: absolute; content: ''; background: rgba(0, 0, 0, 0.5); top: 0; bottom: 0; left: 0; right: 0;}
+a {
+  color: #00ffff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+a.contact:hover {
+  text-decoration: underline;
+}
+a.footer-1 {
+  color: #8b8b8b !important;
+}
+
+a.footer-1:hover {
+  color: red !important;
+}
+
+.post-meta a:hover {
+  text-decoration: underline;
+}
+
+.entry-title a:hover {
+  text-decoration: underline;
+}
+
+.et_pb_blog_grid .et_pb_post {
+  background-color: #000;
+}
+
+div #footer-bottom {
+  display: none;
+}
+
+.overlayEffect:before {
+  display: block;
+  position: absolute;
+  content: '';
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 
 /* Close Lightbox on click */
 .mfp-content {
@@ -27,11 +61,13 @@ div#footer-bottom {display: none;}
 }
 
 /* fix firefox email subscribe button spacing */
-.gecko .et_pb_newsletter .et_pb_newsletter_field {margin-bottom: auto;}
+.gecko .et_pb_newsletter .et_pb_newsletter_field {
+  margin-bottom: auto;
+}
 
 /* make post content background color not-white */
 .single #main-content {
-background-color: transparent;
+  background-color: transparent;
 }
 
 .menuExpand a {
@@ -40,6 +76,10 @@ background-color: transparent;
 
 .menuExpand a:hover {
 	text-decoration: underline;
+}
+
+#menuExpandArtWithoutEgo {
+  letter-spacing: 0.14em;
 }
 
 .sidebarMenu a {
@@ -96,6 +136,13 @@ background-color: transparent;
 @media only screen and (min-width: 280px) and (max-width: 767px) {
   #sb-spirits {
     padding-left: 1.7vw;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1770px) {
+  #sb-spirits {
+    padding-left: 0.7vw !important;
+    font-size: 1.4vw !important;
   }
 }
 
@@ -235,6 +282,13 @@ background-color: transparent;
 		width: 20%;
 		z-index: 5;
 	}
+}
+
+/* tablet alignment */
+@media only screen and (max-width: 980px) {
+  #subi-select, #lv426-select, #yd-select {
+    margin-right: 0 !important;
+  }
 }
 
 .glitch-img {
@@ -411,79 +465,114 @@ background-color: transparent;
 	visibility: hidden;
 }
 
-/*
+/* menuExpand tablet rules */
 
-original glitch keyframe settings
+/* exiting tablet */
+@media (min-width:1080px) {
+  #menuExpandColumnOne {
+    margin-right: 7%;
+  }
 
-@keyframes glitchone {
-	0% {
-		clip: rect(36px, 9999px, 9px, 0);
-	}
-	25% {
-		clip: rect(25px, 9999px, 99px, 0);
-	}
-	50% {
-		clip: rect(50px, 9999px, 102px, 0);
-	}
-	75% {
-		clip: rect(30px, 9999px, 92px, 0);
-	}
-	100% {
-		clip: rect(91px, 9999px, 98px, 0);
-	}
+  #menuExpandColumnTwo {
+    width: 20%;
+  }
 }
 
-@keyframes glitchtwo {
-	0% {
-		top: -3px;
-		left: 3px;
-		clip: rect(65px, 9999px, 119px, 0);
-	}
-	25% {
-		top: -7px;
-		left: 5px;
-		clip: rect(79px, 9999px, 19px, 0);
-	}
-	50% {
-		top: 15px;
-		left: 3px;
-		clip: rect(68px, 9999px, 11px, 0);
-	}
-	75% {
-		top: 15px;
-		left: -5px;
-		clip: rect(95px, 9999px, 53px, 0);
-	}
-	100% {
-		top: -3px;
-		left: 3px;
-		clip: rect(31px, 9999px, 149px, 0);
-	}
+/* iPad Pro 12.9" */
+@media (min-width: 981px) {
+  .menuExpand {
+    width: 90%;
+  }
+
+  #menuExpandColumnOne {
+    width: 36%;
+  }
+
+  #menuExpandColumnTwo {
+    width: 20%;
+  }
+
 }
 
-exegesis landing logo placement
+/* iPad Pro 10.5" */
+@media (min-width: 834px) and (max-width: 980px) {
+  .menuExpand {
+    width: 90%;
+  }
 
-@media (min-width: 981px) and (max-width: 1015px) {
-	.et_pb_image_0 {top: 120px !important; left: -1px !important;}
+  .et_pb_newsletter .et_pb_newsletter_fields {
+    width: 82%;
+  }
+
+  #menuExpandColumnOne {
+    width: 50%;
+  }
+
+  #menuExpandColumnTwo {
+    width: 26%;
+  }
+
+  #menuExpandColumnThree {
+    width: 20%;
+  }
 }
 
-@media (min-width: 1016px) and (max-width: 1035px) {
-	.et_pb_image_0 {top: 130px !important;}
+/* iPad mini */
+@media (min-width: 768px) and (max-width: 833px) {
+  .menuExpand {
+    width: 90%;
+  }
+
+  .et_pb_newsletter .et_pb_newsletter_fields {
+    width: 82%;
+  }
+
+  #menuExpandColumnOne {
+    width: 36%;
+    margin-right: 3%;
+  }
+
+  #menuExpandColumnTwo {
+    width: 26%;
+    margin-right:3%;
+  }
+
+  #menuExpandColumnThree {
+    width: 20%;
+  }
+
+  .et_pb_text_4_tb_header h1 {
+    font-size: 36px !important;
+  }
+
+  #menuExpandArtWithoutEgo {
+    letter-spacing: -0.1em;
+  }
+
+  body #page-container .et_pb_section .et_pb_signup_0_tb_header.et_pb_subscribe .et_pb_newsletter_button.et_pb_button {
+    font-size: 12px !important;
+  }
 }
 
-@media (min-width: 1036px) and (max-width: 1079px) {
-	.et_pb_image_0 {top: 140px !important; left: -1px !important;}
+/* Galaxy Fold */
+@media (min-width: 280px) and (max-width: 653px) {
+  .menuExpand {
+    font-size: 11px;
+  }
+
+  body #page-container .et_pb_section .et_pb_signup_0_tb_header.et_pb_subscribe .et_pb_newsletter_button.et_pb_button {
+    font-size: 14px !important;
+  }
+
+  .et_pb_text_4_tb_header h1 {
+    font-size: 38px !important;
+  }
+
+  #menuExpandColumnTwo {
+    width: ;
+  }
+
+  #menuExpandArtWithoutEgo {
+    letter-spacing: -0.06em;
+  }
 }
-
-
-@media (min-width: 1080px) and (max-width: 1130px) {
-	.et_pb_image_0 {top: 145px !important;}
-}
-
-@media (min-width: 1131px) and (max-width: 1201px) {
-	.et_pb_image_0 {top: 160px !important;}
-}
-
-@media (min-width: 1202px) and (max-width: 1301px) {
-	.et_pb_image_0 {top: 180px !important;}
-} */

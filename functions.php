@@ -73,3 +73,12 @@ function add_opengraph() {
 add_action('wp_head', 'add_opengraph', 5);
 
 ?>
+
+<?php
+//dynamic year shortcode
+function year_shortcode () {
+$year = date_i18n ('Y');
+return $year;
+}
+add_shortcode ('year', 'year_shortcode');
+?>

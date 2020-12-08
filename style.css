@@ -5,7 +5,7 @@
  Author:         Spirit Bomb, Inc.
  Author URI:     https://spiritbomb.ai/
  Template:       Divi
- Version:        1.1.1
+ Version:        1.1.2
 */
 
 /* =Theme customization starts here
@@ -473,6 +473,12 @@ div #footer-bottom {
 
 /* exiting tablet */
 @media (min-width:1080px) {
+
+  /* email subscribe input field */
+  .et_pb_signup_0_tb_header.et_pb_subscribe {
+    width: 88%;
+  }
+
   #menuExpandColumnOne {
     margin-right: 7%;
   }
@@ -483,9 +489,13 @@ div #footer-bottom {
 }
 
 /* iPad Pro 12.9" */
-@media (min-width: 981px) {
+@media (min-width: 981px) and (max-width: 1079px) {
   .menuExpand {
     width: 90%;
+  }
+
+  .et_pb_signup_0_tb_header.et_pb_subscribe {
+    width: 84%;
   }
 
   #menuExpandColumnOne {
@@ -504,8 +514,8 @@ div #footer-bottom {
     width: 90%;
   }
 
-  .et_pb_newsletter .et_pb_newsletter_fields {
-    width: 82%;
+  .et_pb_signup_0_tb_header.et_pb_subscribe {
+    width: 74%;
   }
 
   #menuExpandColumnOne {
@@ -527,8 +537,8 @@ div #footer-bottom {
     width: 90%;
   }
 
-  .et_pb_newsletter .et_pb_newsletter_fields {
-    width: 82%;
+  .et_pb_signup_0_tb_header.et_pb_subscribe {
+    width: 84%;
   }
 
   #menuExpandColumnOne {

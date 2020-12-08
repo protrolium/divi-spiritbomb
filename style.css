@@ -5,7 +5,7 @@
  Author:         Spirit Bomb, Inc.
  Author URI:     https://spiritbomb.ai/
  Template:       Divi
- Version:        1.1.0
+ Version:        1.1.1
 */
 
 /* =Theme customization starts here
@@ -88,6 +88,10 @@ div #footer-bottom {
 
 .sidebarMenu a:hover {
 	text-decoration: underline;
+}
+
+#blogSidebarArtWithoutEgo {
+  font-size: 1.36vw;
 }
 
 #sls_des {

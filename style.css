@@ -5,11 +5,19 @@
  Author:         Spirit Bomb, Inc.
  Author URI:     https://spiritbomb.ai/
  Template:       Divi
- Version:        1.1.3
+ Version:        1.2.0
 */
 
 /* =Theme customization starts here
 ------------------------------------------------------- */
+
+@font-face {
+    font-family: 'Aldo the Apache';
+    font-style: normal;
+    font-weight: normal;
+    src: local('https://spiritbomb.local/wp-content/themes/divi-spiritbomb/fonts/aldo-the-apache-cufonfonts-webfont/AldotheApache.woff'), url('https://spiritbomb.ai/wp-content/themes/divi-spiritbomb/fonts/aldo-the-apache-cufonfonts-webfont/AldotheApache.woff') format('woff');
+}
+
 a {
   color: #00ffff;
 }
@@ -17,9 +25,15 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+h1, h2 {
+  font-family: 'Aldo the Apache', 'Oswald', Helvetica, Arial, sans-serif;
+}
+
 a.contact:hover {
   text-decoration: underline;
 }
+
 a.footer-1 {
   color: #8b8b8b !important;
 }
@@ -78,8 +92,21 @@ div #footer-bottom {
 	text-decoration: underline;
 }
 
+h1.menuExpandTitle {
+  font-family: 'Aldo the Apache','Russo One',Helvetica,Arial,Lucida,sans-serif;
+  font-size: 4.55vw;
+  line-height: 0.49em;
+  padding-top: 3.1vh;
+}
+
+h1.menuExpandColumnTwo, h1.menuExpandColumnThree {
+  font-family: 'Aldo the Apache','Russo One',Helvetica,Arial,Lucida,sans-serif;
+  font-size: 2vw;
+}
+
 #menuExpandArtWithoutEgo {
-  letter-spacing: 0.14em;
+  font-size: 1.18vw;
+  letter-spacing: 0.33em;
 }
 
 .sidebarMenu a {
@@ -139,20 +166,22 @@ div #footer-bottom {
 
 @media only screen and (min-width: 280px) and (max-width: 767px) {
   #sb-spirits {
-    padding-left: 1.7vw;
+    padding-left: 3vw;
+    font-size: 3.3vw;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1770px) {
   #sb-spirits {
-    padding-left: 0.7vw !important;
-    font-size: 1.4vw !important;
+    padding-left: 0.9vw !important;
+    font-size: 2vw !important;
   }
 }
 
 @media only screen and (min-width: 1770px) {
   #sb-spirits {
-    padding-left: 1.6vw;
+    padding-left: 0.8vw;
+    font-size: 2vw;
   }
 }
 
@@ -495,7 +524,16 @@ div #footer-bottom {
   }
 
   .et_pb_signup_0_tb_header.et_pb_subscribe {
-    width: 84%;
+    width: 100%;
+  }
+
+  h1.menuExpandTitle {
+    font-size: 6.3vw;
+    padding-top: 2.5vh;
+  }
+
+  #menuExpandArtWithoutEgo {
+    font-size: 1.63vw;
   }
 
   #menuExpandColumnOne {
@@ -504,6 +542,10 @@ div #footer-bottom {
 
   #menuExpandColumnTwo {
     width: 20%;
+  }
+
+  h1.menuExpandColumnTwo, h1.menuExpandColumnThree {
+    font-size: 4vw;
   }
 
 }
@@ -515,7 +557,7 @@ div #footer-bottom {
   }
 
   .et_pb_signup_0_tb_header.et_pb_subscribe {
-    width: 74%;
+    width: 76%;
   }
 
   #menuExpandColumnOne {
@@ -529,6 +571,19 @@ div #footer-bottom {
   #menuExpandColumnThree {
     width: 20%;
   }
+
+  h1.menuExpandTitle {
+    font-size: 6.45vw;
+    padding-top: 2.8vh;
+  }
+
+  #menuExpandArtWithoutEgo {
+    font-size: 1.68vw;
+  }
+
+  h1.menuExpandColumnTwo, h1.menuExpandColumnThree {
+    font-size: 4vw;
+  }
 }
 
 /* iPad mini */
@@ -538,7 +593,12 @@ div #footer-bottom {
   }
 
   .et_pb_signup_0_tb_header.et_pb_subscribe {
-    width: 84%;
+    width: 95%;
+  }
+
+  h1.menuExpandTitle {
+    font-size: 5.75vw;
+    padding-top: 2.6vh;
   }
 
   #menuExpandColumnOne {
@@ -560,11 +620,16 @@ div #footer-bottom {
   }
 
   #menuExpandArtWithoutEgo {
+    font-size: 2.58vw;
     letter-spacing: -0.1em;
   }
 
   body #page-container .et_pb_section .et_pb_signup_0_tb_header.et_pb_subscribe .et_pb_newsletter_button.et_pb_button {
     font-size: 12px !important;
+  }
+
+  h1.menuExpandColumnTwo, h1.menuExpandColumnThree {
+    font-size: 4vw;
   }
 }
 
@@ -572,6 +637,10 @@ div #footer-bottom {
 @media (min-width: 280px) and (max-width: 653px) {
   .menuExpand {
     font-size: 11px;
+  }
+
+  h1.menuExpandTitle {
+    font-size: 15vw;
   }
 
   body #page-container .et_pb_section .et_pb_signup_0_tb_header.et_pb_subscribe .et_pb_newsletter_button.et_pb_button {
@@ -586,7 +655,12 @@ div #footer-bottom {
     width: ;
   }
 
+  h1.menuExpandColumnTwo, h1.menuExpandColumnThree {
+    font-size: 9vw;
+  }
+
   #menuExpandArtWithoutEgo {
+    font-size: 6.3vw;
     letter-spacing: -0.06em;
   }
 }

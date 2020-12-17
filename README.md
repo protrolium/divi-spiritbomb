@@ -2,6 +2,6 @@
 
 Wordpress Theme: Divi by [Elegant Themes](https://elegantthemes.com/)<br>
 Author: [Spirit Bomb, Inc.](https://spiritbomb.ai/)<br>
-Version: 1.1.3<br>
+Version: 1.2.0<br>
 <br>
 <br>

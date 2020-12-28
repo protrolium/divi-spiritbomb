@@ -15,8 +15,10 @@
     font-family: 'Aldo the Apache';
     font-style: normal;
     font-weight: 500;
-    src: local('https://spiritbomb.local/wp-content/themes/divi-spiritbomb/fonts/aldo-the-apache-cufonfonts-webfont/AldotheApache.woff'),
-    url('https://spiritbomb.ai/wp-content/themes/divi-spiritbomb/fonts/aldo-the-apache-cufonfonts-webfont/AldotheApache.woff') format('woff');
+    src: local('https://spiritbomb.local/wp-content/themes/divi-spiritbomb/fonts/AldotheApache.woff'),
+    url('https://spiritbomb.ai/wp-content/themes/divi-spiritbomb/fonts/AldotheApache.woff') format('woff'),
+    url('https://spiritbomb.ai/wp-content/themes/divi-spiritbomb/fonts/AldotheApache.ttf') format('truetype');
+
 }
 
 a {

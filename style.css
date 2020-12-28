@@ -5,7 +5,7 @@
  Author:         Spirit Bomb, Inc.
  Author URI:     https://spiritbomb.ai/
  Template:       Divi
- Version:        1.2.0
+ Version:        1.2.2
 */
 
 /* =Theme customization starts here
@@ -14,8 +14,9 @@
 @font-face {
     font-family: 'Aldo the Apache';
     font-style: normal;
-    font-weight: normal;
-    src: local('https://spiritbomb.local/wp-content/themes/divi-spiritbomb/fonts/aldo-the-apache-cufonfonts-webfont/AldotheApache.woff'), url('https://spiritbomb.ai/wp-content/themes/divi-spiritbomb/fonts/aldo-the-apache-cufonfonts-webfont/AldotheApache.woff') format('woff');
+    font-weight: 500;
+    src: local('https://spiritbomb.local/wp-content/themes/divi-spiritbomb/fonts/aldo-the-apache-cufonfonts-webfont/AldotheApache.woff'),
+    url('https://spiritbomb.ai/wp-content/themes/divi-spiritbomb/fonts/aldo-the-apache-cufonfonts-webfont/AldotheApache.woff') format('woff');
 }
 
 a {
@@ -115,6 +116,13 @@ h1.menuExpandColumnTwo, h1.menuExpandColumnThree {
 
 .sidebarMenu a:hover {
 	text-decoration: underline;
+}
+
+h1#blogSidebarHeader {
+  margin-top: 2.7vh !important;
+  font-size: 4.3vw !important;
+  line-height: 0.6em !important;
+
 }
 
 #blogSidebarArtWithoutEgo {
@@ -573,8 +581,9 @@ h1.menuExpandColumnTwo, h1.menuExpandColumnThree {
   }
 
   h1.menuExpandTitle {
+
     font-size: 6.45vw;
-    padding-top: 2.8vh;
+    padding-top: 1.4vh;
   }
 
   #menuExpandArtWithoutEgo {
@@ -598,7 +607,7 @@ h1.menuExpandColumnTwo, h1.menuExpandColumnThree {
 
   h1.menuExpandTitle {
     font-size: 5.75vw;
-    padding-top: 2.6vh;
+    padding-top: 1.6vh;
   }
 
   #menuExpandColumnOne {

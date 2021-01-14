@@ -5,7 +5,7 @@
  Author:         Spirit Bomb, Inc.
  Author URI:     https://spiritbomb.ai/
  Template:       Divi
- Version:        1.2.3
+ Version:        1.2.4
 */
 
 /* =Theme customization starts here
@@ -506,6 +506,11 @@ h1#blogSidebarHeader {
 
 #live-exp-txt {
 	visibility: hidden;
+}
+
+/* Safari margin-right issue */
+#page-container {
+   overflow-x: hidden;
 }
 
 /* menuExpand tablet rules */

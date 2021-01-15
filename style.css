@@ -5,7 +5,7 @@
  Author:         Spirit Bomb, Inc.
  Author URI:     https://spiritbomb.ai/
  Template:       Divi
- Version:        1.2.4
+ Version:        1.2.5
 */
 
 /* =Theme customization starts here
@@ -98,18 +98,30 @@ div #footer-bottom {
 h1.menuExpandTitle {
   font-family: 'Aldo the Apache','Russo One',Helvetica,Arial,Lucida,sans-serif;
   font-size: 4.55vw;
-  line-height: 0.49em;
+  line-height: 0.8em;
   padding-top: 3.1vh;
 }
 
-h1.menuExpandColumnTwo, h1.menuExpandColumnThree {
+.menuExpandColumn h1 {
   font-family: 'Aldo the Apache','Russo One',Helvetica,Arial,Lucida,sans-serif;
   font-size: 2vw;
+}
+
+.menuExpandColumn a {
+  font-size: 1em;
 }
 
 #menuExpandArtWithoutEgo {
   font-size: 1.18vw;
   letter-spacing: 0.33em;
+}
+
+.et_pb_signup_0_tb_header.et_pb_subscribe {
+  padding: 15px 0 30px 0;
+}
+
+#menuExpandColumnOneDivider, #menuExpandColumnTwoDivider {
+  height: 14px;
 }
 
 .sidebarMenu a {
@@ -121,14 +133,19 @@ h1.menuExpandColumnTwo, h1.menuExpandColumnThree {
 }
 
 h1#blogSidebarHeader {
-  margin-top: 2.7vh !important;
+  margin-top: 2.7vh;
   font-size: 4.3vw !important;
-  line-height: 0.6em !important;
+  line-height: 0.6em;
 
 }
 
 #blogSidebarArtWithoutEgo {
   font-size: 1.36vw;
+}
+
+#blogSidebarEmail {
+  padding-top: 15px;
+  padding-bottom: 0px;
 }
 
 #sls_des {
@@ -325,6 +342,10 @@ h1#blogSidebarHeader {
 		width: 20%;
 		z-index: 5;
 	}
+}
+
+#vp-mainRow {
+  margin: 0 auto 0;
 }
 
 /* tablet alignment */
@@ -559,7 +580,7 @@ h1#blogSidebarHeader {
     width: 20%;
   }
 
-  h1.menuExpandColumnTwo, h1.menuExpandColumnThree {
+  .menuExpandColumn h1 {
     font-size: 4vw;
   }
 
@@ -597,7 +618,7 @@ h1#blogSidebarHeader {
     font-size: 1.68vw;
   }
 
-  h1.menuExpandColumnTwo, h1.menuExpandColumnThree {
+  .menuExpandColumn h1 {
     font-size: 4vw;
   }
 }
@@ -644,7 +665,7 @@ h1#blogSidebarHeader {
     font-size: 12px !important;
   }
 
-  h1.menuExpandColumnTwo, h1.menuExpandColumnThree {
+  .menuExpandColumn h1 {
     font-size: 4vw;
   }
 }
@@ -671,12 +692,81 @@ h1#blogSidebarHeader {
     width: ;
   }
 
-  h1.menuExpandColumnTwo, h1.menuExpandColumnThree {
+  .menuExpandColumn h1{
     font-size: 9vw;
   }
 
   #menuExpandArtWithoutEgo {
     font-size: 6.3vw;
     letter-spacing: -0.06em;
+  }
+}
+
+/* 4K Monitor */
+@media (min-width: 2700px) {
+
+  h1.menuExpandTitle {
+    font-size: 4vw;
+    line-height: 0.9em;
+  }
+
+  #sb-spirits {
+    padding-bottom: 1vh;
+  }
+
+  .et_pb_signup_0_tb_header.et_pb_subscribe {
+    padding-top: 45px;
+  }
+
+  #menuExpandArtWithoutEgo {
+    font-size: 2.32em;
+    padding-bottom: 0.7em;
+  }
+
+  .menuExpandColumn a {
+    font-size: 2em;
+    line-height: 1.4em;
+  }
+
+  #menuExpandColumnOneDivider, #menuExpandColumnTwoDivider {
+    height: 55px;
+  }
+
+  h1#blogSidebarHeader {
+    line-height: 1em;
+  }
+
+  #blogSidebarArtWithoutEgo {
+    line-height: 1em;
+    padding-bottom: 0.5em;
+  }
+
+  #blogSidebarEmail {
+    padding-top: 55px;
+    padding-bottom: 35px;
+  }
+
+  #aav-txt {
+    font-size: 2.5em;
+  }
+  #aav-logo {
+    padding-bottom: 100px;
+  }
+
+  #vp-section {
+    margin: auto;
+    min-height: 100vh;
+  }
+
+  #vp-rotated-txt {
+    top: 12vh;
+  }
+
+  #vp-mainRow {
+    margin: auto;
+  }
+
+  .postContent, .et_pb_row_1_tb_body {
+    max-width: none;
   }
 }

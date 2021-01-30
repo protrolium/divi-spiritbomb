@@ -26,7 +26,7 @@ function fb_opengraph() {
 
     if( is_single() || is_page() ) {
       if( has_post_thumbnail( $post->ID )) {
-        $img_src = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), "medium");
+        $img_src = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), "large");
         $img_src = $img_src[0];
       } else {
             $img_src = get_stylesheet_directory_uri() . '/img/SB_Logo_Final_Hi-01_optimized.png';

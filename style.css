@@ -22,7 +22,8 @@
 }
 
 a {
-  color: #00ffff;
+  /* color: #00ffff; */
+  color: #a599ff;
 }
 
 a:hover {
@@ -353,6 +354,14 @@ h1#blogSidebarHeader {
   #subi-select, #lv426-select, #yd-select {
     margin-right: 0 !important;
   }
+}
+
+/* post text formatting */
+.et_pb_post_content_0_tb_body {
+    font-family: 'Overpass Mono',monospace;
+    font-size: 2.2vw !important;
+    line-height: 1.4em;
+    color: #d1d1d1;
 }
 
 .glitch-img {

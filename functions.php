@@ -72,6 +72,9 @@ function add_opengraph() {
 }
 add_action('wp_head', 'add_opengraph', 5);
 
+// x-frame SAMEORIGIN (iframe fix for /radio)
+//add_action( 'send_headers', 'send_frame_options_header', 10, 0 );
+
 ?>
 
 <?php

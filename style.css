@@ -192,6 +192,9 @@ h1#blogSidebarHeader {
   padding-left: 0.7vw;
 }
 
+
+
+
 @media only screen and (min-width: 280px) and (max-width: 767px) {
   #sb-spirits {
     padding-left: 6.6vw;
@@ -212,6 +215,9 @@ h1#blogSidebarHeader {
     font-size: 1vw;
   }
 }
+
+
+
 
 #xen-hover {
     opacity: 0.0;
@@ -349,6 +355,9 @@ h1#blogSidebarHeader {
   margin: 0 auto 0;
 }
 
+
+
+
 /* tablet alignment */
 @media only screen and (max-width: 980px) {
   #subi-select, #lv426-select, #yd-select {
@@ -356,8 +365,12 @@ h1#blogSidebarHeader {
   }
 }
 
+
+
+
 /* /radio play/pause button */
 .radioButton {
+  margin-left: 10px;
   border: 0;
   background: transparent;
   box-sizing: border-box;
@@ -374,8 +387,27 @@ h1#blogSidebarHeader {
   border-width: 0px 0 0px 60px;
 }
 .radioButton:hover {
-  border-color: transparent transparent transparent #a599ff; /*#404040;*/
+  border-color: transparent transparent transparent blue /* #a599ff #404040; */
 }
+
+/* radio text span bg color */
+#openStream:hover, .mixList:hover {
+  background-color: blue;
+  opacity: 1.00
+  -webkit-transition: 0.25s all ease-in-out;
+	-moz-transition: 0.25s all ease-in-out;
+	-o-transition: 0.25s all ease-in-out;<br>
+	transition: 0.25s all ease-in-out;
+  }
+
+p.mixList {
+  cursor: pointer;
+  color: #fff;
+  padding-bottom: 0;
+}
+
+
+
 
 /* post text formatting */
 .et_pb_post_content_0_tb_body {
@@ -384,6 +416,10 @@ h1#blogSidebarHeader {
     line-height: 1.4em;
     color: #d1d1d1;
 }
+
+
+
+
 
 .glitch-img {
  	/* position: absolute;
@@ -788,7 +824,7 @@ height: auto !important;
   }
 
   .et_pb_text_4_tb_header h1 {
-    font-size: 38px !important;
+    /* font-size: 38px !important; */
   }
 
   #menuExpandColumnTwo {

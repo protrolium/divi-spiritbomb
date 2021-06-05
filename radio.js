@@ -3,7 +3,6 @@ var showList = [
   '/spiritbomb_ai/xen-stage-construction/',
   '/spiritbomb_ai/xen-stage-construction-visualizer-3/'
 ];
-var randomIndex = Math.floor(Math.random() * showList.length);
 var randomIndex = showList[Math.floor(Math.random()*showList.length)];
 var widget = Mixcloud.PlayerWidget(document.getElementById("mixcloud-widget"));
 var playPauseButton = document.getElementsByClassName("radioButton");

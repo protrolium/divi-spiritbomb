@@ -3,13 +3,14 @@ var showList = [
   '/spiritbomb_ai/xen-stage-construction/',
   '/spiritbomb_ai/xen-stage-construction-visualizer-3/'
 ];
+
 var randomIndex = showList[Math.floor(Math.random()*showList.length)];
 var widget = Mixcloud.PlayerWidget(document.getElementById("mixcloud-widget"));
 var playPauseButton = document.getElementsByClassName("radioButton");
 
 widget.ready.then(function() {
-  loadRandom();
-  widget.play();
+  //loadRandom();
+  //widget.play();
   // make sure playing() gets called when playlist autostart = true
   setTimeout(function() {
     widget.getIsPaused().then(result => {
@@ -64,7 +65,6 @@ function loadRandom() {
 
 document.getElementById("show_000").onclick = function() {
   loadShow_0();
-  widget.play();
   // make sure playing() gets called when playlist autostart = true
   setTimeout(function() {
     widget.getIsPaused().then(result => {
@@ -75,7 +75,6 @@ document.getElementById("show_000").onclick = function() {
 
 document.getElementById("show_001").onclick = function() {
   loadShow_1();
-  widget.play();
   setTimeout(function() {
     widget.getIsPaused().then(result => {
       playing();
@@ -85,7 +84,6 @@ document.getElementById("show_001").onclick = function() {
 
 document.getElementById("show_002").onclick = function() {
   loadShow_2();
-  widget.play();
   setTimeout(function() {
     widget.getIsPaused().then(result => {
       playing();

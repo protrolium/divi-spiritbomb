@@ -7,18 +7,23 @@ var showList = [
 var randomIndex = showList[Math.floor(Math.random()*showList.length)];
 var widget = Mixcloud.PlayerWidget(document.getElementById("mixcloud-widget"));
 var playPauseButton = document.getElementsByClassName("radioButton");
+var clickedId = "";
+var showListIndex = "";
 
 widget.ready.then(function() {
   //loadRandom();
   //widget.play();
   // make sure playing() gets called when playlist autostart = true
+
   setTimeout(function() {
     widget.getIsPaused().then(result => {
       playing();
+      console.log('widget.ready playing()')
     });
   }, 350);
+
   widget.events.play.on(playing);
-  console.log('listening for play')
+  console.log('listening for play from widet.ready.then()')
 });
 
 function playing() {
@@ -29,30 +34,28 @@ function playing() {
       playPauseButton[0].classList.add("paused");
       widget.events.play.off(playing);
       widget.events.pause.on(playing);
+      console.log('listening for pause via playing()')
 
     } else if (result) {
       console.log('paused if ' + result)
       playPauseButton[0].classList.remove("paused");
       widget.events.pause.off(playing);
       widget.events.play.on(playing);
+      console.log('listening for play via playing()')
 
     } else {
       console.log('will never be reached')
     }
 
-  });
+  })
 }
 
-function loadShow_0() {
-    widget.load(showList[0], true);
-}
-
-function loadShow_1() {
-    widget.load(showList[1], true);
-}
-
-function loadShow_2() {
-    widget.load(showList[2], true);
+function loadShow() {
+  showListIndex = document.getElementById(clickedId).dataset.showListIndex;
+  console.log(showListIndex + ' loaded')
+  widget.ready.then(function() {
+    widget.load(showList[~~showListIndex], false);
+  })
 }
 
 function togglePlay() {
@@ -63,32 +66,40 @@ function loadRandom() {
   widget.load(randomIndex, false);
 }
 
-document.getElementById("show_000").onclick = function() {
-  loadShow_0();
-  // make sure playing() gets called when playlist autostart = true
-  setTimeout(function() {
-    widget.getIsPaused().then(result => {
-      playing();
-    });
-  }, 350);
-}
+document.addEventListener('click', function(e) {
+  clickedId = e.target.id;
+  console.log('clickedId = ' + e.target.id)
 
-document.getElementById("show_001").onclick = function() {
-  loadShow_1();
-  setTimeout(function() {
-    widget.getIsPaused().then(result => {
-      playing();
-    });
-  }, 350);
-}
+  if (clickedId.startsWith('show_') == true) {
+    onClickPlaylist();
+  } else {
+    console.log('show_ not true')
+  }
+}, false);
 
-document.getElementById("show_002").onclick = function() {
-  loadShow_2();
+function onClickPlaylist() {
+  widget.pause();
+  widget.events.pause.off(playing);
+  widget.events.play.on(playing);
+  console.log('listening for play via onClickPlaylist()')
+
+  loadShow();
+
   setTimeout(function() {
+    widget.ready.then(result => {
+      widget.play();
+      console.log('play() via onClickPlaylist')
+      widget.events.play.off(playing);
+      widget.events.pause.on(playing);
+      console.log('listening for pause via onClickPlaylist()')
+    });
+
     widget.getIsPaused().then(result => {
       playing();
+      console.log('check if ' + clickedId + ' is playing()')
     });
-  }, 350);
+
+  }, 1000);
 }
 
 // function simClick() {

@@ -73,9 +73,28 @@ div #footer-bottom {
   right: 0;
 }
 
+/* hide video control panel button elements */
+video::-webkit-media-controls-play-button {
+  display: none !important;
+}
+
+video::-webkit-media-controls-current-time-display {
+  display: none !important;
+}
+
+video::-webkit-media-controls-time-remaining-display {
+  display: none !important;
+}
+
+video::-webkit-media-controls-timeline {
+  display: none !important;
+}
+
+
+
 /* Close Lightbox on click */
 .mfp-content {
-    pointer-events: none!important;
+    pointer-events: none !important;
 }
 
 /* fix firefox email subscribe button spacing */
@@ -396,7 +415,7 @@ h1#blogSidebarHeader {
   opacity: 1.00
   -webkit-transition: 0.25s all ease-in-out;
 	-moz-transition: 0.25s all ease-in-out;
-	-o-transition: 0.25s all ease-in-out;<br>
+	-o-transition: 0.25s all ease-in-out;
 	transition: 0.25s all ease-in-out;
   }
 

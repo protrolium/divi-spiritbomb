@@ -431,7 +431,7 @@ p.mixList {
 /* post text formatting */
 .et_pb_post_content_0_tb_body {
     font-family: 'Overpass Mono',monospace;
-    font-size: 2.2vw !important;
+    /* font-size: 2.2vw !important; */
     line-height: 1.4em;
     color: #d1d1d1;
 }

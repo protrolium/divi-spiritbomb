@@ -5,7 +5,7 @@
  Author:         Spirit Bomb, Inc.
  Author URI:     https://spiritbomb.ai/
  Template:       Divi
- Version:        1.5
+ Version:        1.5.1
 */
 
 /* =Theme customization starts here
@@ -15,7 +15,7 @@
     font-family: 'Aldo the Apache';
     font-style: normal;
     font-weight: 500;
-    src: local('https://spiritbomb.local/wp-content/themes/divi-spiritbomb/fonts/AldotheApache.woff'),
+    src: local('https://spiritbombai.local/wp-content/themes/divi-spiritbomb/fonts/AldotheApache.woff'),
     url('https://spiritbomb.ai/wp-content/themes/divi-spiritbomb/fonts/AldotheApache.woff') format('woff'),
     url('https://spiritbomb.ai/wp-content/themes/divi-spiritbomb/fonts/AldotheApache.ttf') format('truetype');
 

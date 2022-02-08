@@ -5,7 +5,7 @@
  Author:         Spirit Bomb, Inc.
  Author URI:     https://spiritbomb.ai/
  Template:       Divi
- Version:        1.5.1
+ Version:        1.5.2
 */
 
 /* =Theme customization starts here
@@ -15,9 +15,10 @@
     font-family: 'Aldo the Apache';
     font-style: normal;
     font-weight: 500;
-    src: local('https://spiritbombai.local/wp-content/themes/divi-spiritbomb/fonts/AldotheApache.woff'),
+    src: local('https://spiritbomb.ai/wp-content/themes/divi-spiritbomb/fonts/AldotheApache.woff'),
     url('https://spiritbomb.ai/wp-content/themes/divi-spiritbomb/fonts/AldotheApache.woff') format('woff'),
     url('https://spiritbomb.ai/wp-content/themes/divi-spiritbomb/fonts/AldotheApache.ttf') format('truetype');
+    /* src: local('https://spiritbombai.local/wp-content/themes/divi-spiritbomb/fonts/AldotheApache.woff'), */
 
 }
 
@@ -129,11 +130,12 @@ h1.menuExpandTitle {
 
 .menuExpandColumn a {
   font-size: 1em;
+  line-height: 2em;
 }
 
 #menuExpandArtWithoutEgo {
   font-size: 1.18vw;
-  letter-spacing: 0.33em;
+  letter-spacing: 0.45em;
 }
 
 .et_pb_signup_0_tb_header.et_pb_subscribe {
@@ -160,7 +162,8 @@ h1#blogSidebarHeader {
 }
 
 #blogSidebarArtWithoutEgo {
-  font-size: 1.36vw;
+  font-size: 1.16vw;
+  letter-spacing: 0.41em;
 }
 
 #blogSidebarEmail {
@@ -409,15 +412,8 @@ h1#blogSidebarHeader {
   border-color: transparent transparent transparent blue /* #a599ff #404040; */
 }
 
+
 /* radio text span bg color */
-#openStream:hover, .mixList:hover {
-  background-color: blue;
-  opacity: 1.00
-  -webkit-transition: 0.25s all ease-in-out;
-	-moz-transition: 0.25s all ease-in-out;
-	-o-transition: 0.25s all ease-in-out;
-	transition: 0.25s all ease-in-out;
-  }
 
 p.mixList {
   cursor: pointer;
@@ -425,8 +421,31 @@ p.mixList {
   padding-bottom: 0;
 }
 
+.mixList:hover {
+  display: inline;
+  background-color: blue;
+  opacity: 1;
+  padding: 3px 12px;
+  border-radius: 15px;
+  -webkit-transition: 0.25s all ease-in-out;
+	-moz-transition: 0.25s all ease-in-out;
+	-o-transition: 0.25s all ease-in-out;
+	transition: 0.25s all ease-in-out;
+  }
 
+#openStream {
+  background-color: #0000006b;
+}
 
+/* span bg color */
+#openStream:hover {
+  background-color: blue;
+  opacity: 1;
+  -webkit-transition: 0.25s all ease-in-out;
+	-moz-transition: 0.25s all ease-in-out;
+	-o-transition: 0.25s all ease-in-out;
+	transition: 0.25s all ease-in-out;
+}
 
 /* post text formatting */
 .et_pb_post_content_0_tb_body {
@@ -435,10 +454,6 @@ p.mixList {
     line-height: 1.4em;
     color: #d1d1d1;
 }
-
-
-
-
 
 .glitch-img {
  	/* position: absolute;
@@ -855,8 +870,8 @@ height: auto !important;
   }
 
   #menuExpandArtWithoutEgo {
-    font-size: 6.3vw;
-    letter-spacing: -0.06em;
+    font-size: 4.8vw;
+    letter-spacing: 0.23em;
   }
 }
 

@@ -74,6 +74,14 @@ add_action('wp_head', 'add_opengraph', 5);
 
 // x-frame SAMEORIGIN (iframe fix for /radio)
 //add_action( 'send_headers', 'send_frame_options_header', 10, 0 );
+function gallery_size_h($height) {
+return '9999';
+}
+add_filter( 'et_pb_blog_image_height', 'gallery_size_h' );
+function gallery_size_w($width) {
+return '9999';
+}
+add_filter( 'et_pb_blog_image_width', 'gallery_size_w' );
 
 ?>
 

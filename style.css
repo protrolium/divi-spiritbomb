@@ -5,7 +5,7 @@
  Author:         Spirit Bomb, Inc.
  Author URI:     https://spiritbomb.ai/
  Template:       Divi
- Version:        1.7
+ Version:        1.8
 */
 
 /* =Theme customization starts here
@@ -318,6 +318,11 @@ h1#blogSidebarHeader {
 
 #sb-spirits {
   padding-left: 0.7vw;
+}
+
+/* blog heading padding */
+.et_pb_post_content_0_tb_body h3 {
+  padding-bottom: 1.2em;
 }
 
 
